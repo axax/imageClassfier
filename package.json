@@ -1,0 +1,28 @@
+{
+  "name": "lunucImageClassifier",
+  "version": "0.0.1",
+  "description": "Classifies an image",
+  "main": "index.js",
+  "repository": "git://github.com/axax/lunuc.git",
+  "engines": {
+    "node": "12.0.0",
+    "npm": "6.9.0"
+  },
+  "scripts": {
+    "start": "node test.js"
+  },
+  "keywords": [
+    "Image recognision"
+  ],
+  "author": "simonschaerer <axax@gmx.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/axax/issues"
+  },
+  "dependencies": {
+    "@tensorflow-models/mobilenet": "^1.0.1",
+    "@tensorflow/tfjs": "^1.2.1",
+    "jpeg-js": "^0.3.5",
+    "request": "^2.88.0"
+  }
+}
