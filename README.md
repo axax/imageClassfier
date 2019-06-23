@@ -1,4 +1,4 @@
-# Image classifier as aws lambda
+# Image classifier that runs on AWS Lambda
 
 ## Run it locally
 
@@ -7,10 +7,10 @@ npm install
 npm start
 ````
 
-## Run it on AWS
+## Run it on AWS Lambda
 
 ### Prepare AWS
-#### Install AWS cli
+#### Install AWS CLI
 ````
 curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
 unzip awscli-bundle.zip
@@ -36,6 +36,3 @@ zip -r ../imageClassifier.zip *
 aws lambda update-function-code --function-name imageClassifier \
 --zip-file fileb://~/path/to/your/imageClassifier.zip
 ````
-
-aws lambda update-function-code --function-name imageClassifier \
---zip-file fileb://~/dev/nodjs/imageClassifier.zip
